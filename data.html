@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            Adding Data
+        </title>
+        <style>
+            #box1
+            {
+                position: absolute;
+                margin-top: 0%;
+                margin-left: 10px;
+                background-color: gold;
+                width: 400px;
+                height: 500px;
+            }
+            #box2
+            {
+                position: absolute;
+                margin-top: 0px;
+                margin-left: 500px;
+                width: 700px;
+            }
+            th
+            {
+                background-color: blue;
+                color: white;
+            }
+            #mytable
+            {
+                background-color: lightblue;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1">
+            <table cellpadding="30px">
+                <tr><td>Nom</td><td><input type="text" id="nom"></td>
+                </tr>
+                <tr><td>Prénom</td><td><input type="text" id="prenom"></td>
+                </tr>
+                <tr><td>Adresse</td><td><input type="text" id="adresse"></td>
+                </tr>
+                <tr><td>Telephone</td><td><input type="text" id="telephone"></td>
+                </tr>
+                <tr><td>E-mail</td><td><input type="text" id="email"></td>
+                </tr>
+                <tr><td><button type="button" onclick="myFunction()">Ajouter</button></td>
+                    <td><button type="button" onclick="myReset()">Reset</button></td>
+                </tr></table>
+        </div>   
+        <div id="box2">
+            <table id="mytable" border="1px" width="700px" cellpadding="10px">
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Adresse</th>
+                    <th>Telephone</th>
+                    <th>E-mail</th>
+                </tr>
+            </table>
+        </div>
+        <script>
+            function myFunction() 
+            {
+                var table=document.getElementById("mytable");
+                var row=table.insertRow(1);
+                var cell1=row.insertCell(0);
+                var cell2=row.insertCell(1);
+                var cell3=row.insertCell(2);
+                var cell4=row.insertCell(3);
+                var cell5=row.insertCell(4);
+                cell1.innerHTML=document.getElementById("nom").value;
+                cell2.innerHTML=document.getElementById("prenom").value;
+                cell3.innerHTML=document.getElementById("adresse").value;
+                cell4.innerHTML=document.getElementById("telephone").value;
+                cell5.innerHTML=document.getElementById("email").value;                
+            }
+            function myReset() 
+            {
+                document.getElementById("nom").value = '';
+                document.getElementById("prenom").value= '';
+                document.getElementById("adresse").value= '';
+                document.getElementById("telephone").value= '';
+                document.getElementById("email").value= '';
+                
+            }
+        </script>
+    </body>
+</html>

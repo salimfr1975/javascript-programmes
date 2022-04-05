@@ -1,0 +1,57 @@
+#res
+{
+    width:150px;
+}
+#clear
+{
+    width:150px;
+  
+}
+#formstyle
+{
+    width:150px;
+    height:260px;
+    position: absolute;
+    margin-top:0px;
+    margin-left:350px ;
+    border: 1px solid black;
+}
+
+#top
+{
+    width:300px;
+    height:80px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left:10px;
+    border: 1px solid black;
+}
+
+#facture
+{
+    width:300px;
+    height:300px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left:550px;
+    border: 1px solid black;
+}
+
+input
+{
+    width:47px;
+    background-color: yellow;
+}
+
+#nom
+{
+    width:200px;
+    background-color: pink;
+}
+
+#prenom
+{
+    width:200px;
+    background-color: pink;
+}
+

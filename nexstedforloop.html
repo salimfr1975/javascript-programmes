@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Nester For Loop
+        </title>
+    </head>
+    <body>
+        <script>
+            var a, b, x;
+            for(x=1;x<=5;x++)
+            {
+                for(b=x;b<=5;b++)
+                {
+                    document.write("&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+                }
+                for(b=1;b<=x;b++)
+                {
+                    document.write(b+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+                }
+                for(b=x-1;b>=1;b--)
+                {
+                    document.write(b+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </body>
+</html>

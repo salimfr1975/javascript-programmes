@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            Form Validation
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="css/javascriptvalidation.css">
+    </head>
+
+    
+    <body>
+        <div class="container">
+            <h1 class="text-success text-center">validation complète du formulaire en javascript</h1>
+                <div class="col-lg-8 m-auto d-block">
+                    <form action="#" onsubmit="return validation()" class="bg-lightgrey">
+                        <div class="form-group">
+                            <label >Nom d'utilisateur : </label>
+                            <input type="text" name="pass" class="form-control" id="pass" autocomplete="off">
+                            
+                            <span id="username" class="text-su font-weight-bold"></span>
+                        </div>
+                        
+                        <div class="form-g roup">
+                            <label >Mot de passe : </label>
+                            <input type="text" name="pass" class="form-control" id="pass" autocomplete="off">
+                            <span id="passwords" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <label >Confirmez le mot de passe : </label>
+                            <input type="text" name="conpass" class="form-control" id="conpass" autocomplete="off">
+                            <span id="confrmpass" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <label >Numéro de portable : </label>
+                            <input type="text" name="mobile" class="form-control" id="mobileNumber" autocomplete="off">
+                            <span id="mobileno" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <label >E-mail : </label>
+                            <input type="text" name="email" class="form-control" id="emails" autocomplete="off">
+                            <span id="emailids" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+               
+                            <input type="submit" name="submit" value="Soumettre" class="btn btn-success">
+                            <input type="reset" name="reset" value="Reset" class="btn btn-success">
+                        </div>
+                        
+                        
+
+                    </form>
+
+                </div>
+            
+
+        </div>
+       <script src="js/javascriptvalidation.js">
+
+       </script>
+    </body>
+</html>

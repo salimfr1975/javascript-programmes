@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>
+            Calculatrice
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="top">
+            <table cellpadding="5px">
+                <tr>
+                    <td>
+                        Nom :
+                    </td>
+                    <td>
+                        <input type="text" id="nom"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Prénom :
+                    </td>
+                    <td>
+                        <input type="text" id="prenom">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="formstyle">
+            <form action="" method="" name="forms">
+
+                <input type="text" id="res">
+                <br><br>
+                <input type="button" id="un" value=" 1 " onclick="un1()">
+                <input type="button" id="deux" value=" 2 " onclick="deux2()">
+                <input type="button" id="trois" value=" 3 " onclick="trois3()">
+                <br><br>
+                <input type="button" id="quatre" value=" 4 " onclick="quatre4()">
+                <input type="button" id="cinq" value=" 5 " onclick="cinq5()">
+                <input type="button" id="six" value=" 6 " onclick="six6()">
+                <br><br>
+                <input type="button" id="sept" value=" 7 " onclick="sept7()">
+                <input type="button" id="huit" value=" 8 " onclick="huit8()">
+                <input type="button" id="neuf" value=" 9 " onclick="neuf9()">
+                <br><br>
+                <input type="button" id="plus" value=" + " onclick="plus1()">
+                <input type="button" id="minus" value=" - " onclick="minus1()">
+                <input type="button" id="mul" value=" * " onclick="mul1()">
+                <br><br>
+                <input type="button" id="div" value=" / " onclick="div1()">
+                <input type="button" id="zero" value=" 0 " onclick="zero1()">
+                <input type="button" id="egale" value=" = " onclick="egale1()">
+                <br><br>
+                <input type="button" id="clear" value="Votre Facture" onclick="clear1()">
+
+            </form>
+        </div>
+        <div id="facture">
+            <h2 align="center">Facture</h2>
+            <table cellpadding="15px">
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nom :
+                    </td>
+                    <td id="nom1">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Prénom :
+                    </td>
+                    <td id="prenom1">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Total :
+                    </td>
+                    <td id="total1">
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="js/calculatrice.js">
+            
+        </script>
+    </body>
+</html>
